@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import * as Vsc from "react-icons/vsc";
+import Header from "./commponents/Header";
+import Filter from "./commponents/Filter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App vh-100 d-flex flex-wrap align-items-start">
+      <div className="main w-100">
+          <Header />
+          <div className="container my-3">
+            <div className="content py-2">
+              <Filter />
+            </div>
+          </div>
+      </div>
+
+      <div className="footer w-100 text-center py-3 align-self-end">
+        <small> طراحی شده توسط <a href="https://hamidkamyab.ir/" target="_blank" className="text-info">حمید کامیاب</a></small>
+      </div>
     </div>
   );
 }
