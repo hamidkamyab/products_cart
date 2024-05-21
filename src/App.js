@@ -1,4 +1,3 @@
-import * as Vsc from "react-icons/vsc";
 import Header from "./commponents/Header";
 import Filter from "./commponents/Filter";
 
@@ -10,6 +9,10 @@ function App() {
           <div className="container my-3">
             <div className="content py-2">
               <Filter />
+              <div className="productNum my-3 text-muted d-flex align-items-center gap-1 justify-content-end">
+                <span>26</span>
+                <span>کالا</span>
+              </div>
             </div>
           </div>
       </div>

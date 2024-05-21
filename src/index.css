@@ -12,10 +12,11 @@ body {
 .App {
     min-height: 100vh;
     background-color: #eee;
+    overflow-x: hidden;
 }
 
 .header {
-    background-color: #f5f6fa;
+    background-color: #ebecf0;
     box-shadow: 0px 2px 3px 1px #dcdde1;
 }
 
@@ -47,12 +48,12 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.header .profile {
+.header .left-icon {
     color: #606872;
     transition: 0.3s ease-out;
 }
 
-.header .profile:hover {
+.header .left-icon:hover {
     color: #414549;
     transition: 0.3s ease-out;
 }
@@ -64,8 +65,133 @@ body {
     display: block;
 }
 
-.content .filterBox {
+.content .neo {
     background-color: #eee;
-    border-radius: 4px;
     box-shadow: -4px -4px 6px 1px #dcdde1, 4px 4px 6px 1px #fff;
+}
+
+.content .filter-sec .filter-lbl {
+    font-size: 14px;
+    color: #3742fa;
+    transition: 0.3s ease-out;
+}
+
+.content .filter-sec:hover .filter-lbl {
+    color: #171b64;
+    transition: 0.3s ease-out;
+}
+
+.vr {
+    width: 2px;
+    height: 100%;
+    background-color: #393b3d;
+}
+
+.content .filter-sec .filter-list {
+    width: 200px;
+    height: 0;
+    top: 38px;
+    right: -16px;
+    cursor: default;
+    overflow: hidden;
+    background-color: #eee;
+    box-shadow: -4px 3px 6px 1px #dcdde1, 4px 6px 6px 2px #fff;
+    transition: 0.4s;
+}
+
+.content .filter-sec:hover .filter-list {
+    height: calc(144px + 15px);
+    transition: 0.4s;
+}
+
+.content .filter-sec .filter-list.ova {
+    overflow-y: auto;
+}
+
+.content .filter-sec .filter-list .filter-list-body {
+    padding: 15px 10px;
+}
+
+.content .filter-list .form-check {
+    height: 24px;
+}
+
+.content .filter-sec .filter-list label {
+    font-size: 12px;
+    color: #57606f;
+}
+
+.content .filter-sec .filter-list input,
+.content .filter-sec .form-check-input {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.content .filter-sec .filter-list input:checked,
+.content .filter-sec .form-check-input:checked {
+    background-color: #3742fa;
+}
+
+.content .filter-sec .filter-list input:checked+label {
+    color: #3742fa;
+}
+
+.content .filter-sec>.form-check-input {
+    width: 26px;
+    height: 14px;
+    cursor: pointer;
+    margin-right: -2.2rem;
+}
+
+.content .form-switch>.filter-lbl {
+    color: #8395a7;
+}
+
+.content .filter-sec input:checked+label {
+    color: #3742fa;
+}
+
+.content .filterBox .orderBox select {
+    outline: none;
+    box-shadow: none;
+}
+
+.content .productNum {
+    font-size: 12px;
+}
+
+.carts {
+    height: auto;
+    width: 320px;
+    background-color: transparent;
+    top: 34px;
+    left: -10px
+}
+
+.carts-content {
+    background-color: white;
+    box-shadow: 0 3px 3px 1px rgb(212, 212, 212);
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.carts .carts-content::after {
+    content: '';
+    border-width: 8px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    position: absolute;
+    top: -16px;
+    left: 14px;
+    display: block;
+}
+
+.carts-content>h6 {
+    font-size: 13px;
+}
+
+.my-dropdown-slidedown {
+    transition-duration: 0.2s !important;
+    transition-timing-function: ease-in-out;
 }

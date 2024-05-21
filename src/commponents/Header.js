@@ -1,7 +1,10 @@
 ﻿import React from 'react'
+import { useState } from 'react'
 import * as IO5 from 'react-icons/io5'
+import Carts from './Carts'
 
 function Header() {
+    const [openCart, setOpenCart] = useState(false);
     return (
         <div className="header w-100">
             <div className="container py-3 d-flex align-items-center justify-content-between">
@@ -28,10 +31,12 @@ function Header() {
                 </div>
 
                 <div className="left position-relative d-flex align-items-center">
-                    <span className='profile' role='button'><IO5.IoPerson size={20} /></span>
+                    <span className='profile left-icon' role='button'><IO5.IoPerson size={20} /></span>
                     <span className='line mx-3 mt-1'></span>
-                    <span className='profile' role='button'><IO5.IoCartSharp size={20} /></span>
-                    
+                    <span className='cart left-icon position-relative' role='button' onClick={()=>setOpenCart(()=>!openCart)}>
+                        <IO5.IoCartSharp size={22} />
+                    </span>
+                    <Carts openCart={openCart} />
                 </div>
             </div>
         </div>

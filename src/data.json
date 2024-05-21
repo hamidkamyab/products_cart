@@ -1,0 +1,158 @@
+﻿{
+    "products": [
+
+        {
+            "id": 1,
+            "title": "گوشی موبایل موتورولا مدل Razr 40 Ultra تک سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/270c6076e397c36a0fb605c799089676e7454f19_1704631246.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "46000000",
+            "brand": {
+                "id": 3,
+                "name": "Motorola"
+            },
+            "qty": 1
+        }, {
+            "id": 2,
+            "title": "گوشی موبایل آنر مدل Magic5 Pro دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/0413e367b8dc86523251694dab894112c8753aee_1704009369.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "54000000",
+            "brand": {
+                "id": 5,
+                "name": "Honor"
+            },
+            "qty": 1
+        },
+        {
+            "id": 3,
+            "title": "گوشی موبایل اپل مدل iPhone 13 Pro Max CH دو سیم‌ کارت ظرفیت یک ترابایت و رم 6 گیگابایت - نات اکتیو",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/dcd6e4e843bea3f070614a95d27b1181fdf23008_1673790217.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "149000000",
+            "brand": {
+                "id": 1,
+                "name": "Apple"
+            },
+            "qty": 1
+        },
+        {
+            "id": 4,
+            "title": "گوشی موبایل موتورولا مدل Edge 40 Neo تک سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/839012fa49ea3f80b871b113728ae198ac6e13e6_1704625017.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "13500000",
+            "brand": {
+                "id": 3,
+                "name": "Motorola"
+            },
+            "qty": 1
+        },
+        {
+            "id": 5,
+            "title": "گوشی موبایل اپل مدل iphone 14 Pro دو سیم کارت ظرفیت 256 گیگابایت و 6 گیگابایت رم",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/839012fa49ea3f80b871b113728ae198ac6e13e6_1704625017.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "160000000",
+            "brand": {
+                "id": 1,
+                "name": "Apple"
+            },
+            "qty": 1
+        },
+        {
+            "id": 6,
+            "title": "گوشی موبایل اپل مدل iPhone 13 Pro CH دو سیم‌ کارت ظرفیت 512 گیگابایت و 6 گیگابایت رم - نات اکتیو",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/40026b18c2b053ac4a68c3288556dc899a77aecd_1673784561.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "140000000",
+            "brand": {
+                "id": 1,
+                "name": "Apple"
+            },
+            "qty": 1
+        },
+        {
+            "id": 7,
+            "title": "گوشی موبایل سامسونگ مدل Galaxy A55 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/0cff83999e4e1cbdaa329e3d172faa8b3c6f7877_1710578899.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "18000000",
+            "brand": {
+                "id": 2,
+                "name": "Samsung"
+            },
+            "qty": 1
+        },
+        {
+            "id": 9,
+            "title": "گوشی موبایل شیائومی مدل 13T 5G دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/bc4d60d6ba16a346982161c5b37e76d947432468_1697441974.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "25500000",
+            "brand": {
+                "id": 4,
+                "name": "Xiaomi"
+            },
+            "qty": 1
+        },
+        {
+            "id": 9,
+            "title": "گوشی موبایل سامسونگ مدل Galaxy S24 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - ویتنام",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/a8234e915f4f6ed119daac830e39eca031d62c2d_1705817583.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "74000000",
+            "brand": {
+                "id": 2,
+                "name": "Samsung"
+            },
+            "qty": 1
+        },
+        {
+            "id": 10,
+            "title": "گوشی موبایل شیائومی مدل Poco F5 Pro 5G دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - گلوبال",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/4119f69945582b18ab9907ebe48201994716f1ab_1690266735.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "26800000",
+            "brand": {
+                "id": 4,
+                "name": "Xiaomi"
+            },
+            "qty": 1
+        },
+        {
+            "id": 11,
+            "title": "گوشی موبایل سامسونگ مدل Galaxy S23 FE دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/bd7648d55ffe49a0596ac3668f4db41f7c790f6a_1696760508.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "24000000",
+            "brand": {
+                "id": 2,
+                "name": "Samsung"
+            },
+            "qty": 1
+        },
+        {
+            "id": 12,
+            "title": "گوشی موبایل شیائومی مدل 12 Pro 2201122G دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/c0aae894fcf4964b209e75cda1b9e84a6a18c025_1656406639.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "31000000",
+            "brand": {
+                "id": 4,
+                "name": "Xiaomi"
+            },
+            "qty": 1
+        },
+        {
+            "id": 13,
+            "title": "گوشی موبایل آنر مدل X9b دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/41513f36ca8ed31b603737010b4a109c646f7f76_1707811518.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "16500000",
+            "brand": {
+                "id": 5,
+                "name": "Honor"
+            },
+            "qty": 1
+        },
+        {
+            "id": 14,
+            "title": "گوشی موبایل اوپو مدل Reno10 5G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+            "img": "https://dkstatics-public.digikala.com/digikala-products/8f918c2d1ce692f79f626c44ef91058d8d544542_1701500438.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+            "price": "54000000",
+            "brand": {
+                "id": 6,
+                "name": "Oppo"
+            },
+            "qty": 1
+        }
+    ]
+}
