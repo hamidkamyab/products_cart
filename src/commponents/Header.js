@@ -5,6 +5,9 @@ import Carts from './Carts'
 
 function Header() {
     const [openCart, setOpenCart] = useState(false);
+    const handleCloseCart = ()=>{
+        setOpenCart(false)
+    }
     return (
         <div className="header w-100">
             <div className="container py-3 d-flex align-items-center justify-content-between">
@@ -36,7 +39,7 @@ function Header() {
                     <span className='cart left-icon position-relative' role='button' onClick={()=>setOpenCart(()=>!openCart)}>
                         <IO5.IoCartSharp size={22} />
                     </span>
-                    <Carts openCart={openCart} />
+                    <Carts openCart={openCart} handleCloseCart={handleCloseCart} />
                 </div>
             </div>
         </div>

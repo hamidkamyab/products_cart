@@ -1,5 +1,7 @@
 import Header from "./commponents/Header";
 import Filter from "./commponents/Filter";
+import Products from "./commponents/Products";
+import data from './data.json'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
                 <span>26</span>
                 <span>کالا</span>
               </div>
+
+              <Products products={data.products} />
             </div>
           </div>
       </div>

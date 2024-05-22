@@ -8,10 +8,19 @@
     src: url('../fonts/iranyekan_extrabold.ttf') format('truetype'), url('../fonts/iranyekan_extrabold.eot') format('embedded-opentype'), url('../fonts/iranyekan_extrabold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'BYekan';
+    src: url('../fonts/BYekan.ttf') format('truetype'), url('../fonts/BYekan.eot') format('embedded-opentype'), url('../fonts/BYekan.woff') format('woff');
+}
+
 .iranyekan {
     font-family: 'IranYekan', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .iranyekan_ebold {
     font-family: 'IranYekan_eb', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.byekan {
+    font-family: 'BYekan', Tahoma, Geneva, Verdana, sans-serif !important;
 }
