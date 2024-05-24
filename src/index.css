@@ -18,7 +18,7 @@ body {
 
 .header {
     background-color: #ebecf0;
-    box-shadow: 0px 2px 3px 1px #dcdde1;
+    box-shadow: 0px 2px 4px 1px #fff;
 }
 
 .footer {
@@ -157,7 +157,7 @@ body {
     width: 400px;
     background-color: transparent;
     top: 34px;
-    left: -10px
+    left: -10px;
 }
 
 .carts-content {
@@ -165,6 +165,7 @@ body {
     box-shadow: 0 3px 3px 1px rgb(212, 212, 212);
     height: auto;
     width: 100%;
+    border-radius: 6px;
 }
 
 .carts-list {
@@ -286,4 +287,13 @@ body {
 .filterBox .filter-btn:active {
     background-color: #3139d3;
     transition: 0.2s ease-in;
+}
+
+.end-ex {
+    color: rgb(158, 158, 158)
+}
+
+.end-ex .hr {
+    height: 1px;
+    background-color: #878dfd;
 }

@@ -4,14 +4,19 @@ import * as FA6 from 'react-icons/fa6'
 import { SlideDown } from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
 
-function Filter() {
-    const [openBrand, setOpenBrnad] = useState(false);
+function Filter({ brands,filterProducts,handleSelected,handleExist }) {
+    const [openBrand, setOpenBrand] = useState(false);
+    // const [selectedBrand,setSelectedBrand] = useState([])
+    // const [isExist,setIsExist] = useState(false)
+
+    
+    
 
     return (
         <div className='filterBox neo w-100 p-3 d-flex justify-content-between align-items-center'>
             <div className="filterContent flex-grow-1 d-flex align-items-center gap-3">
                 <div className='brnad filter-sec position-relative' role='button'>
-                    <div className='brnad-lbl filter-lbl d-flex gap-3 justify-content-between align-items-center' onClick={() => setOpenBrnad(() => !openBrand)}>
+                    <div className='brnad-lbl filter-lbl d-flex gap-3 justify-content-between align-items-center' onClick={() => setOpenBrand(() => !openBrand)}>
                         <span>برند ها</span>
                         <BS.BsChevronDown />
                     </div>
@@ -20,13 +25,17 @@ function Filter() {
                             {
                                 openBrand ?
                                     <div className="filter-list-body">
+                                        {
+                                            brands.map((brand,index) => (
+                                                <div className="form-check my-1" key={index}>
+                                                    <input className="form-check-input" name={`brand-${brand.id}`} type="checkbox" value={brand.id} id={`flexCheck-${brand.id}`} role='button' onChange={(e)=>handleSelected(e)} />
+                                                    <label className="form-check-label" htmlFor={`flexCheck-${brand.id}`} role='button'>
+                                                        {brand.name}
+                                                    </label>
+                                                </div>
+                                            ))
+                                        }
 
-                                        <div className="form-check my-1">
-                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" role='button' />
-                                            <label className="form-check-label" htmlFor="flexCheckDefault" role='button'>
-                                                Default checkbox
-                                            </label>
-                                        </div>
 
                                     </div>
                                     :
@@ -38,12 +47,12 @@ function Filter() {
                 <div className='vr mt-1'></div>
 
                 <div className="form-check form-switch filter-sec m-0">
-                    <input className="form-check-input form-check-input-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <input className="form-check-input form-check-input-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" onChange={(e)=>handleExist(e)} />
                     <label className="form-check-label filter-lbl" htmlFor="flexSwitchCheckDefault" role='button'>فقط کالاهای موجود</label>
                 </div>
-
+                
                 <div>
-                    <button className='btn filter-btn btn-sm d-flex gap-2 align-items-center'>
+                    <button className='btn filter-btn btn-sm d-flex gap-2 align-items-center' onClick={()=>filterProducts()}>
                         <FA6.FaFilter />
                         <span>اعمال فیلتر</span>
                     </button>
