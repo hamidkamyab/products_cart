@@ -8,7 +8,7 @@ function Products({ products }) {
     <div className='products neo p-2 d-flex flex-wrap'>
 
       {
-        products.map(({ title, img, price, qty, brand, stock }, index) => (
+        products.map(({ title, img, price, qty, stock }, index) => (
           <div className="productItem bg-white p-3 col-12 col-md-6 col-lg-4 d-flex flex-column gap-4" key={index}>
             <div className="product-top w-100 d-flex justify-content-center">
               <img src={img} className='w-75' alt="" />

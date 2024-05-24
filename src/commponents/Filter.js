@@ -4,13 +4,8 @@ import * as FA6 from 'react-icons/fa6'
 import { SlideDown } from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
 
-function Filter({ brands,filterProducts,handleSelected,handleExist }) {
+function Filter({ brands,filterProducts,handleSelected,handleExist,handleSort }) {
     const [openBrand, setOpenBrand] = useState(false);
-    // const [selectedBrand,setSelectedBrand] = useState([])
-    // const [isExist,setIsExist] = useState(false)
-
-    
-    
 
     return (
         <div className='filterBox neo w-100 p-3 d-flex justify-content-between align-items-center'>
@@ -62,7 +57,7 @@ function Filter({ brands,filterProducts,handleSelected,handleExist }) {
 
             <div className="orderBox d-flex align-items-center gap-2">
                 <BS.BsSortDown size={32} />
-                <select className="form-select form-select-sm" name='sort' defaultValue="default">
+                <select className="form-select form-select-sm" name='sort' defaultValue="default"  onChange={(e)=>handleSort(e.target.value)}>
                     <option value="default">مرتب سازی</option>
                     <option value="new">جدیدترین</option>
                     <option value="old">قدیمی ترین</option>
