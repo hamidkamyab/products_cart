@@ -3,11 +3,13 @@ import { useState } from 'react'
 import * as IO5 from 'react-icons/io5'
 import Carts from './Carts'
 
-function Header() {
+function Header({carts,handleChangeQTY,delCartItem}) {
     const [openCart, setOpenCart] = useState(false);
     const handleCloseCart = ()=>{
         setOpenCart(false)
     }
+
+
     return (
         <div className="header w-100">
             <div className="container py-3 d-flex align-items-center justify-content-between">
@@ -39,7 +41,7 @@ function Header() {
                     <span className='cart left-icon position-relative' role='button' onClick={()=>setOpenCart(()=>!openCart)}>
                         <IO5.IoCartSharp size={22} />
                     </span>
-                    <Carts openCart={openCart} handleCloseCart={handleCloseCart} />
+                    <Carts openCart={openCart} handleCloseCart={handleCloseCart} handleChangeQTY={(status,id)=>handleChangeQTY(status,id)} delCartItem={(id)=>delCartItem(id)} carts={carts} />
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@ function Products({ products,addToCart }) {
                     </div>
                     <div className="price byekan">
                       <span className='byekan'>
-                        {price} تومان
+                        {parseInt(price).toLocaleString()} تومان
                       </span>
                     </div>
                   </>

@@ -41,9 +41,9 @@ function App() {
       filterProducts = filterProducts.filter(product => product.stock > 0)
     }
     setProducts(filterProducts)
-    
+
     document.getElementById('default').selected = 'selected';
-    
+
   }
 
   const handleSort = (status) => {
@@ -76,7 +76,7 @@ function App() {
     const existInCart = cart.find(item => item.id == id)
     if (existInCart) {
       setCart(
-        cart.map(cartItem => cartItem.id == id ? { ...existInCart, qty: existInCart.qty + 1 } : cartItem)
+        cart.map(cartItem => cartItem.id == id ? { ...cartItem, qty: cartItem.qty + 1 } : cartItem)
       )
     } else {
       let p = data.products.filter(product => product.id == id)[0];
@@ -84,19 +84,41 @@ function App() {
     }
   }
 
-  // useEffect(() => {
-  //     cart.map((item)=>{
-  //       const ex = products.find(product => product.id == item.id);
-  //       if(ex){
-  //         setProducts([...products,{...ex,qty:item.qty}])
-  //       }
-  //     })
-  // }, [cart]);
+  const handleChangeQTY = (status, id) => {
+
+    const findItem = cart.find(item=>item.id == id);
+    
+    if(status == 'plus'){
+      findItem.stock - findItem.qty > 0?
+        findItem.qty = findItem.qty+1
+      :
+      alert(`فقط ${findItem.qty} عدد از محصول در انبار موجود است.`)
+    }else{
+      findItem.qty = findItem.qty-1
+    }
+    
+    
+
+
+    setCart(
+      cart.map(item => (
+        item.id == id ?
+        findItem
+        :
+        item
+      ))
+    )
+  }
+
+  const delCartItem = (id)=>{
+    setCart(cart.filter(item=>item.id != id))
+  }
+
 
   return (
     <div className="App vh-100 d-flex flex-wrap align-items-start">
       <div className="main w-100">
-        <Header />
+        <Header carts={cart} handleChangeQTY={handleChangeQTY} delCartItem={delCartItem} />
         <div className="container my-3">
           <div className="content py-2">
             <Filter brands={data.brands} filterProducts={filterProducts} handleSelected={handleSelected} handleExist={handleExist} handleSort={handleSort} />

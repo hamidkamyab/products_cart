@@ -244,10 +244,15 @@ body {
     color: #3742fa
 }
 
-.cartItem .op-box button {
+.cartItem .cart-op button {
     padding: 0;
     width: 25px;
-    color: #3742fa
+    color: #1921bb
+}
+
+.cartItem .cart-op>button {
+    padding: 4px 0;
+    width: 36px;
 }
 
 .cartItem .product-price {
