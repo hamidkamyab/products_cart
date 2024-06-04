@@ -57,9 +57,9 @@ function Filter({ brands,filterProducts,handleSelected,handleExist,handleSort })
 
             <div className="orderBox d-flex align-items-center gap-2">
                 <BS.BsSortDown size={32} />
-                <select className="form-select form-select-sm" name='sort' defaultValue="default"  onChange={(e)=>handleSort(e.target.value)}>
-                    <option value="default">مرتب سازی</option>
-                    <option value="new">جدیدترین</option>
+                <select id="sortProduct" className="form-select form-select-sm" name='sort' defaultValue="default"  onChange={(e)=>handleSort(e.target.value)}>
+                    <option value="default" id="default">مرتب سازی</option>
+                    <option value="new" >جدیدترین</option>
                     <option value="old">قدیمی ترین</option>
                     <option value="exp">گرانترین</option>
                     <option value="cheapest">ارزانترین</option>

@@ -2,13 +2,13 @@
 import { useState } from 'react'
 import * as BS from 'react-icons/bs'
 
-function Products({ products }) {
+function Products({ products,addToCart }) {
 
   return (
     <div className='products neo p-2 d-flex flex-wrap'>
 
       {
-        products.map(({ title, img, price, qty, stock }, index) => (
+        products.map(({ id,title, img, price, qty, stock }, index) => (
           <div className="productItem bg-white p-3 col-12 col-md-6 col-lg-4 d-flex flex-column gap-4" key={index}>
             <div className="product-top w-100 d-flex justify-content-center">
               <img src={img} className='w-75' alt="" />
@@ -23,7 +23,7 @@ function Products({ products }) {
                 stock > 0 ?
                   <>
                     <div className="addToCart">
-                      <button className='btn btn-outline-success btn-sm py-1 px-4'>
+                      <button className={`btn btn-outline-success btn-sm py-1 px-4 ${qty>0?'disabled':''}`} onClick={()=>addToCart(id)}>
                         <BS.BsCartPlus size={20} />
                       </button>
                     </div>

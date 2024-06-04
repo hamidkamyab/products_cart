@@ -8,7 +8,7 @@ function App() {
   const [products, setProducts] = useState(data.products)
   const [selectedBrand, setSelectedBrand] = useState([])
   const [isExist, setIsExist] = useState(false)
-  const [defaultSortProducts,setDefaultSortProducts] = useState([]);
+  const [cart, setCart] = useState([])
 
 
   const handleSelected = (e) => {
@@ -41,10 +41,13 @@ function App() {
       filterProducts = filterProducts.filter(product => product.stock > 0)
     }
     setProducts(filterProducts)
+    
+    document.getElementById('default').selected = 'selected';
+    
   }
 
   const handleSort = (status) => {
-    let sortProducts = [];    
+    let sortProducts = [];
     switch (status) {
       case 'new':
         sortProducts = products.sort((a, b) => new Date(b.created) - new Date(a.created));
@@ -63,11 +66,32 @@ function App() {
         break;
       default:
         sortProducts = products.sort((a, b) => a.id - b.id);
+        console.log(sortProducts)
         break;
     }
     setProducts([...sortProducts])
-
   }
+
+  const addToCart = (id) => {
+    const existInCart = cart.find(item => item.id == id)
+    if (existInCart) {
+      setCart(
+        cart.map(cartItem => cartItem.id == id ? { ...existInCart, qty: existInCart.qty + 1 } : cartItem)
+      )
+    } else {
+      let p = data.products.filter(product => product.id == id)[0];
+      setCart([...cart, { ...p, qty: 1 }])
+    }
+  }
+
+  // useEffect(() => {
+  //     cart.map((item)=>{
+  //       const ex = products.find(product => product.id == item.id);
+  //       if(ex){
+  //         setProducts([...products,{...ex,qty:item.qty}])
+  //       }
+  //     })
+  // }, [cart]);
 
   return (
     <div className="App vh-100 d-flex flex-wrap align-items-start">
@@ -81,7 +105,7 @@ function App() {
               <span>کالا</span>
             </div>
 
-            <Products products={products} />
+            <Products products={products} addToCart={addToCart} />
           </div>
         </div>
       </div>

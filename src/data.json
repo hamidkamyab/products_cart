@@ -10,7 +10,7 @@
                 "id": 3,
                 "name": "Motorola"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 10,
             "sell": 5,
             "created": "2024/05/06"
@@ -23,7 +23,7 @@
                 "id": 5,
                 "name": "Honor"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 4,
             "sell": 10,
             "created": "2024/05/06"
@@ -37,7 +37,7 @@
                 "id": 1,
                 "name": "Apple"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 2,
             "sell": 5,
             "created": "2024/05/06"
@@ -51,7 +51,7 @@
                 "id": 3,
                 "name": "Motorola"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 5,
             "sell": 6,
             "created": "2024/05/07"
@@ -65,7 +65,7 @@
                 "id": 1,
                 "name": "Apple"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 7,
             "sell": 15,
             "created": "2024/05/07"
@@ -79,7 +79,7 @@
                 "id": 1,
                 "name": "Apple"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 2,
             "sell": 20,
             "created": "2024/05/07"
@@ -93,7 +93,7 @@
                 "id": 2,
                 "name": "Samsung"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 0,
             "sell": 14,
             "created": "2024/05/08"
@@ -107,7 +107,7 @@
                 "id": 4,
                 "name": "Xiaomi"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 0,
             "sell": 10,
             "created": "2024/05/09"
@@ -121,7 +121,7 @@
                 "id": 2,
                 "name": "Samsung"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 2,
             "sell": 15,
             "created": "2024/05/10"
@@ -135,7 +135,7 @@
                 "id": 4,
                 "name": "Xiaomi"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 10,
             "sell": 1,
             "created": "2024/05/10"
@@ -149,7 +149,7 @@
                 "id": 2,
                 "name": "Samsung"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 8,
             "sell": 3,
             "created": "2024/05/11"
@@ -163,7 +163,7 @@
                 "id": 4,
                 "name": "Xiaomi"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 7,
             "sell": 7,
             "created": "2024/05/12"
@@ -177,7 +177,7 @@
                 "id": 5,
                 "name": "Honor"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 10,
             "sell": 4,
             "created": "2024/05/13"
@@ -191,7 +191,7 @@
                 "id": 6,
                 "name": "Oppo"
             },
-            "qty": 1,
+            "qty": 0,
             "stock": 5,
             "sell": 5,
             "created": "2024/05/13"
