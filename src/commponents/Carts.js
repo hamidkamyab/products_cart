@@ -3,8 +3,10 @@ import { SlideDown } from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
 import CartItem from './CartItem'
 import * as BS from 'react-icons/bs'
+import Slide from 'react-reveal/Slide';
 
-function Carts({ openCart, handleCloseCart, carts,handleChangeQTY,delCartItem }) {
+
+function Carts({ openCart, handleCloseCart, carts, handleChangeQTY, delCartItem }) {
 
     const [totalPrice, setTotalPrice] = useState(0)
 
@@ -30,8 +32,11 @@ function Carts({ openCart, handleCloseCart, carts,handleChangeQTY,delCartItem })
                                         <span><BS.BsX size={18} role='button' onClick={() => handleCloseCart()} /></span>
                                     </div>
                                     <div className="carts-list">
-                                        {carts && carts.map((item,index) => (
-                                            <CartItem item={item} changeQTY={(status,id)=> handleChangeQTY(status,id)} delCartItem={(id)=>delCartItem(id)} key={index} />
+                                        {carts && carts.map((item, index) => (
+                                            <Slide right>
+                                                <CartItem item={item} changeQTY={(status, id) => handleChangeQTY(status, id)} delCartItem={(id) => delCartItem(id)} key={index} />
+                                            </Slide>
+
                                         ))}
                                     </div>
                                     <div className='total-price d-flex align-items-center justify-content-between p-3'>
@@ -51,7 +56,7 @@ function Carts({ openCart, handleCloseCart, carts,handleChangeQTY,delCartItem })
                                         سبد خرید شما خالی است.
                                     </h6>
                                 </div>
-                    }
+                        }
                     </div>
                     : null}
             </SlideDown>

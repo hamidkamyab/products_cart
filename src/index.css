@@ -94,6 +94,7 @@ body {
     max-height: 300px;
     top: 38px;
     right: -16px;
+    z-index: 70;
     cursor: default;
     overflow-y: auto;
     background-color: #eee;
@@ -158,6 +159,7 @@ body {
     background-color: transparent;
     top: 34px;
     left: -10px;
+    z-index: 70;
 }
 
 .carts-content {
